@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add Student</h1>
+
+        <form action="/students/add" method="POST">
+            <label>Student ID:</label>
+            <input type="text" name="student_id" required>
+
+            <label>First Name:</label>
+            <input type="text" name="first_name" required>
+
+            <label>Last Name:</label>
+            <input type="text" name="last_name" required>
+
+            <label>Course:</label>
+            <input type="text" name="course" required>
+
+            <label>Year Level:</label>
+            <input type="number" name="year_level" min="1" max="5" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <button type="submit">Save Student</button>
+        </form>
+
+        <a href="/" class="link-btn">Back to Student List</a>
+    </div>
+</body>
+</html>
